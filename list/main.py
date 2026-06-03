@@ -1,0 +1,16 @@
+a=[10,20,30,40,30,30]
+print(type(a))
+print(max(a),min(a))
+print(a)
+a.append(50)
+print(a)
+a.insert(1,5000)
+print(a)
+k=a.count(30)
+print(k)
+v=sorted(a)
+print(v)
+k=v[::-1]
+print(k)
+a.index()
+print(a)

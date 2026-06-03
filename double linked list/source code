@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node
+{
+    int data;
+    struct Node *prev;
+    struct Node *next;
+};
+struct Node *head=Null,*tail=Null;
+voide insertAtBeg(int data)
+{
+    struct Node *newnode=(struct Node*)malloc(sizeof(struct Node))
+    newnode->data=data;
+    newnode->next=head;
+    newnode->prev=Null;
+
+    if(head==Null)
+    {
+        tail=newnode;
+        
+    }
+    else{
+        head->prev=newnode;
+        head=newnode;
+    }
+}
+void deleteAtBeg()
+{
+    struct Node *temp=head;
+    head=head->next;
+    if(head==Null)
+        tail=Null;
+    else
+    head->prev=Null;
+    free(temp);
+}
+
+
+
+
+
+

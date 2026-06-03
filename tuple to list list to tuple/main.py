@@ -1,0 +1,8 @@
+a=(2,22,30,40,50)
+print(a)
+b=list(a)
+print(b)
+b.append(5600)
+print(b)
+y=tuple(b)
+print(y)

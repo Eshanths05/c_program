@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct Node {
+	int data;
+	struct Node *next;
+};
+struct Node *head=Null, *tail=Null;
+void insertAtBeg(int data)
+{
+	struct Node *newNode=(struct Node*)malloc(sizeof(struct Node));
+	newNode->data=data;
+	newNode->next=head;
+	head=newNode;
+	if(tail==Null)
+		tail=newNode;
+}
+void insertAtEnd(int data)
+{
+    struct Node *newNode=(struct Node*)malloc(sizeof(struct Node))
+    {
+        newNode->data=data;
+        newNode-next=Null;
+        if(head==Null)
+        {
+            head=tail=newNode;
+        }
+        else
+        {
+            tail->next=newNode;
+            tail=newNode;
+        }
+    }
+}
+void deleteAtBeg(int data)
+{
+    if(head==Null)
+    {
+        printf("list is empty");
+        return 0;
+    }
+    struct Node *temp=head;
+    head=head-next;
+    free(temp);
+    
+    if(head==Null)
+    tail=null;
+}
+
+
+
+
+
+
+
+
+
